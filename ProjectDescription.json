@@ -4,19 +4,19 @@
   "DLSVersion_EarliestCompatible": "2.0.0",
   "DLSVersion_LastSavedModdedVersion": "1.1.2",
   "CreationTime": "2025-10-24T23:41:09.560+02:00",
-  "LastSaveTime": "2025-10-25T18:24:18.075+02:00",
+  "LastSaveTime": "2025-10-25T22:45:43.686+02:00",
   "Prefs_MainPinNamesDisplayMode": 2,
   "Prefs_ChipPinNamesDisplayMode": 1,
   "Prefs_GridDisplayMode": 1,
   "Prefs_Snapping": 2,
-  "Prefs_StraightWires": 2,
-  "Prefs_SimPaused": true,
+  "Prefs_StraightWires": 0,
+  "Prefs_SimPaused": false,
   "Prefs_SimTargetStepsPerSecond": 10000000,
   "Prefs_SimStepsPerClockTick": 4,
-  "Perfs_PinIndicators": 0,
-  "StepsRanSinceCreated": 513043781,
+  "Perfs_PinIndicators": 4,
+  "StepsRanSinceCreated": 2400703136,
   "TimeSpentSinceCreated": {
-    "StartFrom": "04:05:28.1507184"
+    "StartFrom": "05:02:58.1250877"
   },
   "AllCustomChipNames":[
     "NOT",
@@ -33,15 +33,12 @@
     "32XOR",
     "ALU",
     "4PIN OR",
-    "LESS(S) ",
+    "LESS(S)",
     "LOW(U)",
     "8BIT XOR",
     "EQ",
     "8 INPUT AND",
     "32BIT XOR",
-    "EQ 32BIT ",
-    "LESS(SIGNED) 32BIT",
-    "LOW(UNSIGNED) 32BIT",
     "2BIT REG",
     "8BIT REG",
     "32BIT REG",
@@ -54,7 +51,12 @@
     "2BIT DECODER",
     "1BIT DECODER",
     "32BIT 1BIT MUX",
-    "32BIT 2BIT MUX"
+    "32BIT 2BIT MUX",
+    "8BIT LESS(S) HIGH",
+    "8BIT LESS(S)",
+    "8BIT LOW(U) HIGH",
+    "8BIT LOW(U)",
+    "8BIT NOT SEL"
   ],
   "StarredList":[
     {
@@ -142,7 +144,7 @@
       "Name":"MEMORY"
     },
     {
-      "Chips":["BUTTON","DIPSWITCH","CONST","DETECTOR","RAM-8","EEPROM 256×16","BUZZER","SPS","RTC","8BIT BUF","32BIT BUF","4PIN OR","LESS(S) ","LOW(U)","8BIT XOR","EQ","8 INPUT AND","32BIT XOR","EQ 32BIT ","LESS(SIGNED) 32BIT","LOW(UNSIGNED) 32BIT"],
+      "Chips":["BUTTON","DIPSWITCH","CONST","DETECTOR","RAM-8","EEPROM 256×16","BUZZER","SPS","RTC","8BIT BUF","32BIT BUF","4PIN OR","8BIT XOR","8 INPUT AND","32BIT XOR","8BIT LESS(S) HIGH","8BIT LESS(S)","8BIT LOW(U) HIGH","8BIT LOW(U)","8BIT NOT SEL"],
       "IsToggledOpen":true,
       "Name":"OTHER"
     },
@@ -152,8 +154,8 @@
       "Name":"GATES"
     },
     {
-      "Chips":["1B Adder","2B Adder","4B Adder","8B Adder","16B Adder","32B Adder"],
-      "IsToggledOpen":false,
+      "Chips":["1B Adder","2B Adder","4B Adder","8B Adder","16B Adder","32B Adder","EQ","LOW(U)","LESS(S)"],
+      "IsToggledOpen":true,
       "Name":"ALU"
     },
     {
@@ -173,7 +175,7 @@
     },
     {
       "Chips":["32BIT 1BIT MUX","32BIT 2BIT MUX","32BIT-5BIT x15 MUX"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"D/MUX"
     }
   ],
